@@ -1,11 +1,23 @@
 {
   "name": "stone-tool",
   "version": "0.0.1",
-  "main": "index.js",
+  "main": "./dist/stone-tool.js",
   "repository": "https://github.com/yuanhaoyu/stone-tool.git",
   "author": "yuanhaoyu <yhy929768691@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "test": "jest"
+  },
   "devDependencies": {
-    "webpack": "^2.7.0"
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-runtime": "^6.26.0",
+    "jest": "^23.6.0",
+    "webpack": "^3.4.0"
   }
 }
